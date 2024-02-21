@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="contentArea1" prefHeight="588.0" prefWidth="871.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxaeroluxproject.controllers.MyReservationController">
+   <children>
+      <Pane layoutX="584.0" layoutY="1.0" prefHeight="57.0" prefWidth="260.0" style="-fx-background-radius: 20 20 0 0;" stylesheets="@Styles/fullpackstyling.css">
+         <children>
+            <Label id="hello" layoutX="14.0" layoutY="13.0" prefHeight="31.0" prefWidth="148.0" text="Hello, Donia !" textFill="#06007b">
+               <font>
+                  <Font name="Poppins Regular" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="149.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/notif-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="196.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/user.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TextField id="search" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="445.0" promptText="Search" style="-fx-border-color: white; -fx-border-radius: 20px; -fx-background-color: white;">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="33.0" fitWidth="37.0" layoutX="469.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/search.png" />
+         </image>
+      </ImageView>
+      <Label id="hello" layoutX="373.0" layoutY="72.0" prefHeight="0.0" prefWidth="260.0" text="My Reservation" textFill="#06007b">
+         <font>
+            <Font name="Poppins Regular" size="20.0" />
+         </font>
+      </Label>
+      <TableView id="table" fx:id="reservation_table" layoutX="35.0" layoutY="110.0" prefHeight="464.0" prefWidth="821.0" style="-fx-border-color: blue; -fx-border-radius: 20px;" stylesheets="@Styles/fullpackstyling.css">
+         <columns>
+            <TableColumn id="id_trip" fx:id="id_trip" prefWidth="78.39999389648438" text="Id Trip" />
+            <TableColumn id="agency_name" fx:id="agency_name" prefWidth="98.39998626708984" text="Agency Name" />
+            <TableColumn id="status" fx:id="status" prefWidth="123.20001220703125" text="Status" />
+            <TableColumn id="nb_seat" fx:id="nb_seat" prefWidth="91.20001220703125" text="Number Seats" />
+            <TableColumn id="price" fx:id="price" prefWidth="79.2000732421875" text="Price" />
+            <TableColumn id="reservation_date" fx:id="reservation_date" prefWidth="158.40005493164062" text="Reservation Date" />
+            <TableColumn id="action" fx:id="action" prefWidth="160.0001220703125" text="Action" />
+         </columns>
+      </TableView>
+   </children>
+</Pane>
