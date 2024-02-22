@@ -1,31 +1,40 @@
 package com.example.javafxaeroluxproject.models;
 
 import java.sql.Date;
-
+import java.util.Arrays;
 public class Vol {
-
-        private Integer id;
-        private Date dateDepart;
-
-        private Date dateArrive;
-        private String description;
-
+    private byte[] imageData;
+    private Integer id;
+    private Date dateDepart;
+    private Date dateArrivee;
+    private String description;
     private String numVol;
     private Integer piloteId;
-
     private String lieuArrivee;
     private String lieuDepart;
     private Integer placeDispo;
-    public Vol(Integer id, Date dateDepart, Date dateArrive, String description, String numVol, Integer piloteId, String lieuArrivee, String lieuDepart, Integer placeDispo) {
-        this.id = id;
-        this.dateDepart = dateDepart;
-        this.dateArrive = dateArrive;
-        this.description = description;
+    private Float price;
+
+    public byte[] getImageData() {
+        return imageData;
+    }
+
+    public void setImageData(byte[] imageData) {
+        this.imageData = imageData;
+    }
+
+    public Vol(String numVol, String lieuDepart, String lieuArrivee, Integer placeDispo, String description,
+               Date dateArrivee, Date dateDepart, Integer piloteId , Float price , byte[] imageData) {
         this.numVol = numVol;
-        this.piloteId = piloteId;
-        this.lieuArrivee = lieuArrivee;
         this.lieuDepart = lieuDepart;
+        this.lieuArrivee = lieuArrivee;
         this.placeDispo = placeDispo;
+        this.description = description;
+        this.piloteId = piloteId;
+        this.price = price;
+        this.imageData = imageData;
+        this.dateArrivee = dateArrivee;
+        this.dateDepart = dateDepart;
     }
     public Vol() {
 
@@ -39,21 +48,7 @@ public class Vol {
         this.id = id;
     }
 
-    public Date getDateDepart() {
-        return dateDepart;
-    }
 
-    public void setDateDepart(Date dateDepart) {
-        this.dateDepart = dateDepart;
-    }
-
-    public Date getDateArrive() {
-        return dateArrive;
-    }
-
-    public void setDateArrive(Date dateArrive) {
-        this.dateArrive = dateArrive;
-    }
 
     public String getDescription() {
         return description;
@@ -95,8 +90,33 @@ public class Vol {
         this.lieuDepart = lieuDepart;
     }
 
+
     public Integer getPlaceDispo() {
         return placeDispo;
+    }
+
+    public Date getDateDepart() {
+        return dateDepart;
+    }
+
+    public void setDateDepart(Date dateDepart) {
+        this.dateDepart = dateDepart;
+    }
+
+    public Date getDateArrivee() {
+        return dateArrivee;
+    }
+
+    public void setDateArrivee(Date dateArrivee) {
+        this.dateArrivee = dateArrivee;
+    }
+
+    public Float getPrice() {
+        return price;
+    }
+
+    public void setPrice(Float price) {
+        this.price = price;
     }
 
     public void setPlaceDispo(Integer placeDispo) {
@@ -104,6 +124,9 @@ public class Vol {
     }
     @Override
     public String toString() {
+
+        String imageStr = (imageData != null) ? Arrays.toString(imageData) : "null";
+
         return "Vol{" +
                 "numVol='" + numVol + '\'' +
                 ", lieuArrivee='" + lieuArrivee + '\'' +
@@ -111,10 +134,11 @@ public class Vol {
                 ", lieuDepart='" + lieuDepart + '\'' +
                 ", placeDispo=" + placeDispo +
                 ", description='" + description + '\'' +
-                ", dateArrive=" + dateArrive +
+                ", price=" + price +
+                ", dateArrive=" + dateArrivee +
                 ", dateDepart=" + dateDepart +
+                ", image=" + imageStr +
                 '}';
     }
-
 
 }

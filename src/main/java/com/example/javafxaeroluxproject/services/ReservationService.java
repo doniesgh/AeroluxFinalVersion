@@ -54,13 +54,10 @@ public class ReservationService implements IService<Reservation> {
             reservation.setNb_seat(rs.getInt("nb_seat"));
             reservation.setPrice(rs.getFloat("price"));
             reservation.setReservation_date(rs.getDate("reservation_date"));
-            // Add the Reservation object to the list
             reservations.add(reservation);
         }
-        // Close resources
         rs.close();
         st.close();
-        // Return the list of reservations
         return reservations;
     }
     public void updateStatusToRejected(int reservationId) throws SQLException {

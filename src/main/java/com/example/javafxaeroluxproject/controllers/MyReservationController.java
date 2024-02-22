@@ -54,7 +54,6 @@ public class MyReservationController {
             ObservableList<Reservation> observableList = FXCollections.observableList(reservations);
             reservation_table.setItems(observableList);
 
-            // Set cell value factories for each column
             agency_name.setCellValueFactory(new PropertyValueFactory<>("agency_name"));
             id_trip.setCellValueFactory(new PropertyValueFactory<>("trip_id"));
             nb_seat.setCellValueFactory(new PropertyValueFactory<>("nb_seat"));

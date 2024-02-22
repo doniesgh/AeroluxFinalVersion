@@ -12,9 +12,7 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-import java.sql.Date;
 import java.sql.SQLException;
-
 import java.util.List;
 
 public class Main extends Application {
@@ -23,20 +21,9 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
-
-        Vol volToAdd = new Vol();
-        volToAdd.setNumVol("ABC123");
-        volToAdd.setLieuArrivee("Destination");
-        volToAdd.setPiloteId(1);
-        volToAdd.setLieuDepart("Departure");
-        volToAdd.setPlaceDispo(100);
-        volToAdd.setDescription("Sample description");
-        volToAdd.setDateArrive(new Date(124 - 1900, 1 - 1, 18));
-        volToAdd.setDateDepart(new Date(124 - 1900, 1 - 1, 18));
         try {
             VolService volService = new VolService();
 
-            volService.ajouter(volToAdd);
 
             List<Vol> vols = volService.recuperer();
 
@@ -47,18 +34,9 @@ public class Main extends Application {
         } catch (SQLException e) {
             System.err.println("Error occurred while adding or retrieving data: " + e.getMessage());
         }
-        Reservation reservationToAdd = new Reservation();
-        reservationToAdd.setTrip_id(1);
-        reservationToAdd.setAgency_name("Example Agency");
-        reservationToAdd.setStatus("Confirmed");
-        reservationToAdd.setNb_seat(2);
-        reservationToAdd.setPrice(100.00f);
-        Date reservationDate = new Date(2024 - 1900, 1, 18);
-        reservationToAdd.setReservation_date(reservationDate);
 
         try {
             ReservationService rs = new ReservationService();
-            rs.ajouter(reservationToAdd);
             List<Reservation> reservations = rs.recuperer();
             System.out.println("Retrieved reservations:");
             for (Reservation reservation : reservations) {
@@ -67,7 +45,7 @@ public class Main extends Application {
         } catch (SQLException e) {
             System.err.println("Error occurred while adding reservation: " + e.getMessage());
         }
-        launch(args);
+        launch( args);
 
     }
 
@@ -75,6 +53,8 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
 
         Parent root = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("reservationForm.fxml"));
+
         primaryStage.initStyle(StageStyle.TRANSPARENT);
         root.setOnMousePressed(event -> {
             xOffset = event.getSceneX();

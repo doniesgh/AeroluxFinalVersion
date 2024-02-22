@@ -76,16 +76,13 @@
     -fx-fill : white ;
 
 }
-/* scroll bar starts here */
 
-/* The increment and decrement button CSS class of scrollbar */
 .table-view .increment-button ,.table-view .decrement-button {
     -fx-background-color:transparent;
     -fx-background-radius: 2em;
 
 }
 
-/* The main scrollbar **track** CSS class  */
 .table-view .scroll-bar:horizontal .track,
 .table-view .scroll-bar:vertical .track{
     -fx-background-color: transparent;
@@ -93,8 +90,6 @@
     -fx-background-radius: 2em;
     -fx-border-radius:2em;
 }
-
-/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
 .table-view .scroll-bar:horizontal .thumb,
 .table-view .scroll-bar:vertical .thumb {
     -fx-background-color:derive( #2D75E8,90%);
@@ -102,8 +97,6 @@
     -fx-background-radius: 2em;
 
 }
-
-/* chart properties */
 
 .chart {
     -fx-padding: 10px;
@@ -118,10 +111,7 @@
     -fx-border-color: derive(-fx-pie-color, 1%);
     -fx-border-width: 0px;
 }
-/*.linear-grad
-{
-    -fx-background-color: linear-gradient(to bottom left, #A868A0, #2D75E8);
-}*/
+
 .linear-grad
 {
     -fx-background-color: #2A3D9B;
@@ -147,4 +137,35 @@
     -fx-border-radius: 20px;
     -fx-font-family:'Poppins';
     margin-left: 20px;
+}
+.form-grid {
+    -fx-background-color: #f4f4f4;
+    -fx-padding: 20px;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+.text-field, .combo-box, .text-area, .date-picker {
+    -fx-font-size: 14px;
+    -fx-pref-width: 200px;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+.grid-pane {
+    -fx-background-color: transparent;
+}
+.custom-scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.place{
+
+}
+.book_btn{
+    -fx-background-color: #3b76ff;
+    -fx-text-fill: white;
+
 }
