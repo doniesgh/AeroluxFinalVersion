@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 
-<Pane fx:id="contentArea" prefHeight="588.0" prefWidth="858.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxaeroluxproject.controllers.TripController">
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="contentArea" fx:id="contentArea" prefHeight="588.0" prefWidth="858.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxaeroluxproject.controllers.TripController">
    <children>
       <Pane layoutX="584.0" layoutY="1.0" prefHeight="57.0" prefWidth="260.0" style="-fx-background-radius: 20 20 0 0;" stylesheets="@Styles/fullpackstyling.css">
          <children>
@@ -28,7 +36,7 @@
             <Font name="Poppins Regular" size="14.0" />
          </font>
       </TextField>
-      <Button layoutX="253.0" layoutY="405.0" mnemonicParsing="false" stylesheets="@Styles/fullpackstyling.css" GridPane.columnIndex="2" GridPane.rowIndex="4" style="-fx-background-color: Transparent;">
+      <Button layoutX="301.0" layoutY="414.0" mnemonicParsing="false" style="-fx-background-color: Transparent;" stylesheets="@Styles/fullpackstyling.css" GridPane.columnIndex="2" GridPane.rowIndex="4">
          <graphic>
             <ImageView fitHeight="40.0" fitWidth="40.0">
                <Image url="@resources/seat.png" />
@@ -58,14 +66,14 @@
             <RowConstraints maxHeight="68.40001831054687" minHeight="0.0" prefHeight="39.199981689453125" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Button mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="4" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="2" GridPane.rowIndex="4">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                         <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="2" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="2">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                         <Image url="@resources/seat.png" />
@@ -73,7 +81,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="1" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
 
@@ -82,238 +90,238 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="1" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="1">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.rowIndex="1" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.rowIndex="1">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1" style="-fx-background-color: Transparent;" >
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="1" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="3" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="3">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.rowIndex="2" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.rowIndex="2">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.rowIndex="5" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.rowIndex="5">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.rowIndex="4" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.rowIndex="4">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.rowIndex="3" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.rowIndex="3">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="2" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="2" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="3" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="3" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="4" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="1" GridPane.rowIndex="4">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="7" GridPane.rowIndex="1" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="7" GridPane.rowIndex="1">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="4" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="3" GridPane.rowIndex="4">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="5" style="-fx-background-color: Transparent;" >
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="1" GridPane.rowIndex="5">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="5" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="2" GridPane.rowIndex="5">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="5" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="3" GridPane.rowIndex="5">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="9" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="9">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="9" GridPane.rowIndex="1" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="9" GridPane.rowIndex="1">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="9" GridPane.rowIndex="2" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="9" GridPane.rowIndex="2">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="9" GridPane.rowIndex="3" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="9" GridPane.rowIndex="3">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="9" GridPane.rowIndex="4" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="9" GridPane.rowIndex="4">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="9" GridPane.rowIndex="5" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="9" GridPane.rowIndex="5">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="8" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="8">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="8" GridPane.rowIndex="1" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="8" GridPane.rowIndex="1">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="8" GridPane.rowIndex="2" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="8" GridPane.rowIndex="2">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="8" GridPane.rowIndex="3" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="8" GridPane.rowIndex="3">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="8" GridPane.rowIndex="4" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="8" GridPane.rowIndex="4">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="8" GridPane.rowIndex="5" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="8" GridPane.rowIndex="5">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="7" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="7">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
@@ -327,119 +335,119 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="7" GridPane.rowIndex="2" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="7" GridPane.rowIndex="2">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="7" GridPane.rowIndex="3" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="7" GridPane.rowIndex="3">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="7" GridPane.rowIndex="4" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="7" GridPane.rowIndex="4">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="7" GridPane.rowIndex="5" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="7" GridPane.rowIndex="5">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="10" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="10">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="10" GridPane.rowIndex="1" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="10" GridPane.rowIndex="1">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="10" GridPane.rowIndex="2" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="10" GridPane.rowIndex="2">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="10" GridPane.rowIndex="3" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="10" GridPane.rowIndex="3">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="10" GridPane.rowIndex="4" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="10" GridPane.rowIndex="4">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="10" GridPane.rowIndex="5" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="10" GridPane.rowIndex="5">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="5" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="5">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="1" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="5" GridPane.rowIndex="1">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="2" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="5" GridPane.rowIndex="2">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="3" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="5" GridPane.rowIndex="3">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="4" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="5" GridPane.rowIndex="4">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="4" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="2" GridPane.rowIndex="4">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="5" style="-fx-background-color: Transparent;">
+            <Button mnemonicParsing="false" style="-fx-background-color: Transparent;" GridPane.columnIndex="5" GridPane.rowIndex="5">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="40.0">
                      <Image url="@resources/seat.png" />
@@ -464,50 +472,46 @@
       <ImageView fitHeight="137.0" fitWidth="260.0" layoutX="659.0" layoutY="194.0" rotate="90.0">
             <Image url="@resources/11-removebg-preview.png" />
       </ImageView>
-      <Button layoutX="363.0" layoutY="405.0" mnemonicParsing="false" style="-fx-background-color: #ff0331;" stylesheets="@Styles/fullpackstyling.css">
+      <Button layoutX="390.0" layoutY="414.0" mnemonicParsing="false" style="-fx-background-color: #ff0331;" stylesheets="@Styles/fullpackstyling.css">
          <graphic>
             <ImageView fitHeight="40.0" fitWidth="40.0">
                   <Image url="@resources/seat.png" />
             </ImageView>
          </graphic>
       </Button>
-      <Button layoutX="483.0" layoutY="405.0" mnemonicParsing="false" style="-fx-background-color: #42c8f5;" stylesheets="@Styles/fullpackstyling.css">
+      <Button layoutX="493.0" layoutY="414.0" mnemonicParsing="false" style="-fx-background-color: #42c8f5;" stylesheets="@Styles/fullpackstyling.css">
          <graphic>
             <ImageView fitHeight="40.0" fitWidth="40.0">
                   <Image url="@resources/seat.png" />
             </ImageView>
          </graphic>
       </Button>
-      <Label id="hello" layoutX="377.0" layoutY="453.0" prefHeight="31.0" prefWidth="82.0" text="Booked" textFill="#06007b">
+      <Label id="hello" layoutX="393.0" layoutY="462.0" prefHeight="31.0" prefWidth="82.0" text="Booked" textFill="#06007b">
          <font>
             <Font name="Poppins Regular" size="14.0" />
          </font>
       </Label>
-      <Label id="hello" layoutX="490.0" layoutY="453.0" prefHeight="31.0" prefWidth="82.0" text="Selected" textFill="#06007b">
+      <Label id="hello" layoutX="489.0" layoutY="462.0" prefHeight="31.0" prefWidth="82.0" text="Selected" textFill="#06007b">
          <font>
             <Font name="Poppins Regular" size="14.0" />
          </font>
       </Label>
-      <Label id="hello" layoutX="260.0" layoutY="453.0" prefHeight="31.0" prefWidth="82.0" text="Available" textFill="#06007b">
+      <Label id="hello" layoutX="291.0" layoutY="462.0" prefHeight="31.0" prefWidth="82.0" text="Available" textFill="#06007b">
          <font>
             <Font name="Poppins Regular" size="14.0" />
          </font>
       </Label>
-      <Label id="hello" layoutX="311.0" layoutY="68.0" prefHeight="35.0" prefWidth="237.0" text="Choose Your seats" textFill="#06007b">
+      <Label id="hello" layoutX="329.0" layoutY="59.0" prefHeight="35.0" prefWidth="237.0" text="Choose Your seats" textFill="#06007b">
          <font>
-            <Font name="Poppins Regular" size="24.0" />
+            <Font name="Poppins Regular" size="20.0" />
          </font>
       </Label>
-      <Button layoutX="769.0" layoutY="514.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="68.0"  stylesheets="@Styles/fullpackstyling.css"  style="-fx-background-color: Transparent;">
-         <graphic>
-            <ImageView fitHeight="40.0" fitWidth="40.0">
-               <image>
-                  <Image url="@resources/arrow-right.png" />
-               </image>
-            </ImageView>
-         </graphic>
+      <Button layoutX="720.0" layoutY="516.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="105.0" style="-fx-background-color: Transparent; -fx-border-color: #06007b; -fx-border-radius: 10px; -fx-border-width: 2px;" stylesheets="@Styles/fullpackstyling.css" text="Submit" textFill="#06007b">
+         <font>
+            <Font name="Poppins Regular" size="12.0" />
+         </font>
       </Button>
-      <Button layoutX="28.0" layoutY="514.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="50.0"  stylesheets="@Styles/fullpackstyling.css" style="-fx-background-color: Transparent;" >
+      <Button layoutX="28.0" layoutY="514.0" mnemonicParsing="false"  prefHeight="48.0" prefWidth="50.0" style="-fx-background-color: Transparent;" stylesheets="@Styles/fullpackstyling.css">
          <graphic>
             <ImageView fitHeight="40.0" fitWidth="40.0">
                <image>
@@ -526,5 +530,15 @@
             <Font name="Poppins Regular" size="14.0" />
          </font>
       </Label>
+      <Label id="hello" layoutX="551.0" layoutY="94.0" prefHeight="35.0" prefWidth="237.0" text="Bussiness Class" textFill="#06007b">
+         <font>
+            <Font name="Poppins Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label id="hello" layoutX="210.0" layoutY="94.0" prefHeight="35.0" prefWidth="237.0" text="Economy Class" textFill="#06007b">
+         <font>
+            <Font name="Poppins Regular" size="11.0" />
+         </font>
+      </Label>
    </children>
-</Pane>
+</AnchorPane>

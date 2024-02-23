@@ -5,6 +5,9 @@ module com.example.javafxaeroluxproject {
     requires com.google.zxing;
     requires java.desktop;
     requires java.sql.rowset;
+    requires org.apache.poi.poi;
+    requires org.apache.poi.ooxml;
+    requires javax.mail.api;
 
     exports com.example.javafxaeroluxproject.controllers;
     opens com.example.javafxaeroluxproject to javafx.fxml;

@@ -10,7 +10,8 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="contentArea" prefHeight="588.0" prefWidth="844.0" style="-fx-border-radius: 20px;" stylesheets="@Styles/fullpackstyling.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxaeroluxproject.controllers.TripController">
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane fx:id="contentArea" prefHeight="588.0" prefWidth="844.0" style="-fx-border-radius: 20px;" stylesheets="@Styles/fullpackstyling.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxaeroluxproject.controllers.TripController">
    <children>
       <Pane layoutX="584.0" layoutY="1.0" prefHeight="57.0" prefWidth="260.0" style="-fx-background-radius: 20 20 0 0;" stylesheets="@Styles/fullpackstyling.css">
          <children>
@@ -55,4 +56,4 @@
       </ScrollPane>
 
    </children>
-</Pane>
+</AnchorPane>

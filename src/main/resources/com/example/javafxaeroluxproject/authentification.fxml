@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxaeroluxproject.controllers.Authentification">
+   <children>
+      <AnchorPane prefHeight="616.0" prefWidth="974.0" style="-fx-background-color: white; -fx-background-radius: 15;" stylesheets="@Styles/fullpackstyling.css">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" prefHeight="62.0" prefWidth="989.0" style="-fx-background-color: #06007b;" text="Connexion" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Regular" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fx_user_email" layoutX="550.0" layoutY="232.0" prefHeight="32.0" prefWidth="307.0" />
+            <Button fx:id="fx_btn_connect" layoutX="562.0" layoutY="419.0" mnemonicParsing="false" onAction="#connect" prefHeight="32.0" prefWidth="187.0" style="-fx-background-color: #06007b;" text="Se connecter" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Regular" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="550.0" layoutY="182.0" prefHeight="25.0" prefWidth="132.0" text="Adresse mail">
+               <font>
+                  <Font name="Poppins Regular" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="550.0" layoutY="275.0" prefHeight="25.0" prefWidth="132.0" text="Mot de passe">
+               <font>
+                  <Font name="Poppins Regular" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="fx_forgot_password" layoutX="638.0" layoutY="369.0" onMouseClicked="#changePassword" prefHeight="25.0" prefWidth="132.0" text="Mot de passe oublié ?" textFill="#358abc">
+               <font>
+                  <Font name="Poppins Regular" size="10.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="fx_user_password" layoutX="550.0" layoutY="327.0" prefHeight="32.0" prefWidth="307.0" />
+            <StackPane fx:id="fx_incorrect_credentials" prefHeight="17.0" prefWidth="324.0" style="visibility: false;">
+               <children>
+                  <Text fill="#e10000" strokeType="OUTSIDE" strokeWidth="0.0" text="informations d'identification incorrectes" />
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

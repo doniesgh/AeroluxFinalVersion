@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxaeroluxproject.controllers.EditUser">
+   <children>
+      <TextField id="Last_name_tf" fx:id="last_name_fx" layoutX="236.0" layoutY="107.0" promptText="Nom" />
+      <TextField id="first_name_tf" fx:id="first_name_fx" layoutX="236.0" layoutY="152.0" promptText="Prénom" />
+      <TextField id="email_tf" fx:id="email_fx" accessibleText="a" layoutX="236.0" layoutY="198.0" promptText="Adresse mail" />
+      <Button fx:id="btn_reset_fx" layoutX="441.0" layoutY="315.0" mnemonicParsing="false" onAction="#reset_data" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #e63946;" text="Annuler" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField id="role_tf" fx:id="role_fx" layoutX="236.0" layoutY="243.0" promptText="Role" />
+      <Button fx:id="btn_back_fx" layoutX="369.0" layoutY="315.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #219ebc;" text="Retour" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="222.0" layoutY="20.0" prefHeight="34.0" prefWidth="375.0" style="-fx-background-color: #e63946;" text="Edit User " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="415.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Downloads/User_icon_2.svg.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_edit_user" layoutX="512.0" layoutY="315.0" mnemonicParsing="false" onAction="#edit_user" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #4f772d;" text="Modifier" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

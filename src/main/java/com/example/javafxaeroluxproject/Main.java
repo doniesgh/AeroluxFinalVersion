@@ -53,7 +53,7 @@ public class Main extends Application {
 
     public void start(Stage primaryStage) throws Exception {
 
-        Parent root = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("authentification.fxml"));
         //Parent root = FXMLLoader.load(getClass().getResource("reservationForm.fxml"));
 
         primaryStage.initStyle(StageStyle.TRANSPARENT);

@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<?import javafx.scene.control.ListView?>
-<AnchorPane fx:id="itemPane" prefHeight="183.0" prefWidth="250.0" stylesheets="@Styles/fullpackstyling.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxaeroluxproject.controllers.ItemController">
+<AnchorPane fx:id="itemPane" prefHeight="231.0" prefWidth="268.0" style="-fx-background-color: #e3e3e3; -fx-border-radius: 10px;" stylesheets="@Styles/fullpackstyling.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxaeroluxproject.controllers.ItemController">
        <Label id="lieuArrivee" fx:id="lieuArrivee" layoutX="8.0" prefHeight="49.0" prefWidth="137.0" stylesheets="@Styles/fullpackstyling.css" text="Cherry">
            <font>
                <Font name="Poppins Regular" size="14.0" />
@@ -18,11 +17,16 @@
                <Font name="Poppins Regular" size="14.0" />
            </font>
        </Label>
-    <ImageView fx:id="imageView" id="place" fitHeight="144.0" fitWidth="250.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true"  />
-   <Button   layoutX="164.0" layoutY="185.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="85.0" stylesheets="@Styles/fullpackstyling.css" text="Book Now" id="book_btn" onAction="#handleBookAction">
+    <ImageView id="place" fx:id="imageView" fitHeight="144.0" fitWidth="250.0" layoutX="9.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 10px;" />
+   <Button id="book_btn" layoutX="164.0" layoutY="188.0" mnemonicParsing="false" onAction="#handleBookAction" prefHeight="35.0" prefWidth="85.0" style="-fx-background-color: blue; -fx-text-fill: white; -fx-border-radius: 10px;" stylesheets="@Styles/fullpackstyling.css" text="Book Now">
     <font>
         <Font name="Poppins Regular" size="10.0" />
     </font>
    </Button>
+   <Label id="price" fx:id="priceTrip1" layoutX="230.0" layoutY="-1.0" prefHeight="50.0" prefWidth="23.0" stylesheets="@Styles/fullpackstyling.css" text=" Dt">
+      <font>
+         <Font name="Poppins Regular" size="14.0" />
+      </font>
+   </Label>
 
 </AnchorPane>
