@@ -28,11 +28,8 @@ public class DashboardController {
             contentArea.getChildren().add(homeClient);
         } catch (IOException e) {
             e.printStackTrace();
-
     }
     }
-
-
     public void myhome(javafx.event.ActionEvent actionEvent) throws IOException{
         Parent fxml = FXMLLoader.load(getClass().getResource("/com/example/javafxaeroluxproject/clientHome.fxml"));
         contentArea.getChildren().clear();

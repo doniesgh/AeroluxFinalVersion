@@ -251,7 +251,7 @@ void ajouterVol(ActionEvent event) {
             e.printStackTrace();
         }
     }
-    private Vol selectedVol; // Variable to store the selected trip
+    private Vol selectedVol;
 
 
 /*
@@ -282,28 +282,18 @@ void ajouterVol(ActionEvent event) {
         }
     }*/
 @FXML
-private Label tripInfoLabel; // Assuming you have a label to display trip info
-
-    // Method to set trip information
+private Label tripInfoLabel;
     public void setTripInfo(String tripInfo) {
-        // Set trip information in the UI component(s)
         tripInfoLabel.setText(tripInfo);
     }
 @FXML
 private void bookButtonClicked() {
     if (selectedVol != null) {
         try {
-            // Load the TripInformation.fxml file
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/javafxaeroluxproject/reservationData.fxml"));
             Pane tripInfoPane = loader.load();
-
-            // Get the controller associated with the new scene
             TripController tripInfoController = loader.getController();
-
-            // Pass the selected trip information to the controller
-            tripInfoController.setTripInfo(selectedVol.getDescription() + " - " + selectedVol.getLieuDepart() + " to " + selectedVol.getLieuArrivee() + ", Price: " + selectedVol.getPrice()); // Modify this as per your requirements
-
-            // Show the new scene
+            tripInfoController.setTripInfo(selectedVol.getDescription() + " - " + selectedVol.getLieuDepart() + " to " + selectedVol.getLieuArrivee() + ", Price: " + selectedVol.getPrice());
             Stage stage = new Stage();
             stage.setScene(new Scene(tripInfoPane));
             stage.show();
@@ -311,14 +301,27 @@ private void bookButtonClicked() {
             e.printStackTrace();
         }
     } else {
-        // Handle case where no trip is selected
         System.out.println("Please select a trip before booking.");
     }
 }
+    @FXML
+    private void leftButtonClicked() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/javafxaeroluxproject/reservationForm.fxml"));
+            Parent root = loader.load();
+            Stage stage = new Stage();
+            //stage.setTitle("Reservation Form");
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     public void handleTripSelection(Vol vol) {
         if (vol != null) {
-            // Update UI with selected trip information
             String tripInfo = vol.getDescription() + " - " + vol.getLieuDepart() + " to " + vol.getLieuArrivee() + ", Price: " + vol.getPrice();
             System.out.println("Selected Trip: " + tripInfo);
         } else {

@@ -30,36 +30,25 @@ import java.util.ResourceBundle;
 import static javafx.scene.input.KeyCode.O;
 
 public class ReservationController {
-
-
     @FXML
     private TableView<Reservation> reservation_table;
-
     @FXML
     private TableColumn<Reservation, String> agency_name;
-
     @FXML
     private TableColumn<Reservation, Integer> id_reservation;
-
     @FXML
     private TableColumn<Reservation, Integer> id_trip;
-
     @FXML
     private TableColumn<Reservation, Integer> nb_seat;
-
     @FXML
     private TableColumn<Reservation, Float> price;
-
     @FXML
     private TableColumn<Reservation, Date> reservation_date;
-
     @FXML
     private TableColumn<Reservation, String> status;
     @FXML
     private TableColumn action;
-
     private ReservationService reservationService = new ReservationService();
-
     @FXML
     void initialize() {
         ReservationService reservationService1 = new ReservationService();
@@ -67,8 +56,6 @@ public class ReservationController {
             List<Reservation> reservations = reservationService1.recuperer();
             ObservableList<Reservation> observableList = FXCollections.observableList(reservations);
             reservation_table.setItems(observableList);
-
-            // Set cell value factories for each column
             id_reservation.setCellValueFactory(new PropertyValueFactory<>("id"));
             agency_name.setCellValueFactory(new PropertyValueFactory<>("agency_name"));
             id_trip.setCellValueFactory(new PropertyValueFactory<>("trip_id"));
@@ -92,8 +79,6 @@ public class ReservationController {
                                 System.err.println("Error updating reservation: " + e.getMessage());
                             }
                         });
-
-
                         refuseButton.setOnAction(event -> {
                             Reservation reservation = getTableView().getItems().get(getIndex());
                             try {
@@ -105,7 +90,6 @@ public class ReservationController {
 
                         });
                     }
-
                     @Override
                     protected void updateItem(Void item, boolean empty) {
                         super.updateItem(item, empty);
@@ -118,13 +102,8 @@ public class ReservationController {
                     }
                 };
             });
-
-
-
         } catch (SQLException e) {
             System.err.println(e.getMessage());
         }
     }
-
-
 }
